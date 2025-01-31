@@ -39,12 +39,12 @@
 
         layer_1 {
             bindings = <
-&trans            &trans        &trans        &trans        &trans        &trans      &trans     &trans         &trans   &trans   &trans   &trans
-&kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp LBKT    &kp RBKT   &kp F1         &kp F2   &kp F3   &kp F4   &kp DEL
-&kp LEFT_CONTROL  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &none       &kp BSLH   &kp F5         &kp F6   &kp F7   &kp F8   &kp PAGE_UP
-&kp LSHFT         &kp NUMBER_9  &kp NUMBER_0  &kp MINUS     &kp EQUAL     &none       &trans     &kp F9         &kp F10  &kp F11  &kp F12  &kp PAGE_DOWN
-                                              &kp LEFT_WIN  &kp SPACE     &trans      &kp ENTER  &kp BACKSPACE
-                                                            &none         &none       &trans
+&trans            &trans            &trans        &trans        &trans        &trans               &trans     &trans         &trans   &trans   &trans   &trans
+&kp PERIOD        &kp LEFT_BRACKET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACKET    &kp RBKT   &kp F1         &kp F2   &kp F3   &kp F4   &kp DEL
+&kp LEFT_CONTROL  &kp SEMI          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL            &kp BSLH   &kp F5         &kp F6   &kp F7   &kp F8   &kp PAGE_UP
+&kp LSHFT         &kp GRAVE         &kp N7        &kp N8        &kp N9        &kp BACKSLASH        &trans     &kp F9         &kp F10  &kp F11  &kp F12  &kp PAGE_DOWN
+                                                  &none         &kp N0        &kp MINUS            &kp ENTER  &kp BACKSPACE
+                                                                &none         &none                &trans
             >;
         };
 

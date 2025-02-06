@@ -50,10 +50,10 @@
 
         layer_2 {
             bindings = <
-&kp F12           &kp F1                &kp F2            &kp F3            &kp F4            &kp F5                      &kp F6        &kp F7         &kp F8    &kp F9     &kp F10  &kp F11
-&kp LS(GRAVE)     &kp LS(LEFT_BRACKET)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(RIGHT_BRACKET)       &kp LS(RBKT)  &none          &trans    &none      &none    &trans
-&kp LEFT_CONTROL  &kp LS(SEMICOLON)     &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(EQUAL)               &kp LS(BSLH)  &trans         &kp UP    &trans     &trans   &trans
-&kp LEFT_SHIFT    &kp LS(GRAVE)         &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &kp LS(NON_US_BACKSLASH)    &none         &kp LEFT       &kp DOWN  &kp RIGHT  &none    &trans
+&kp F12           &kp F1                &kp F2            &kp F3            &kp F4            &kp F5                      &kp F6        &kp F7         &kp F8    &kp F9     &kp F10    &kp F11
+&kp LS(GRAVE)     &kp LS(LEFT_BRACKET)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(RIGHT_BRACKET)       &kp LS(RBKT)  &none          &trans    &none      &none      &trans
+&kp LEFT_CONTROL  &kp LS(SEMICOLON)     &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(EQUAL)               &kp LS(BSLH)  &kp LEFT       &kp UP    &kp DOWN   &kp RIGHT  &trans
+&kp LEFT_SHIFT    &kp LS(GRAVE)         &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &kp LS(NON_US_BACKSLASH)    &none         &kp LEFT       &kp DOWN  &kp RIGHT  &none      &trans
                                                           &kp LEFT_ALT      &kp LC(N0)        &kp LS(MINUS)               &trans        &kp BACKSPACE
                                                                             &trans            &trans                      &none
             >;

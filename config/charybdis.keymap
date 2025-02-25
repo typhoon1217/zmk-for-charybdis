@@ -95,33 +95,33 @@
         layer_1 {
             bindings = <
 &trans      &trans            &trans        &trans        &trans        &trans               &trans     &trans         &trans   &trans   &trans   &trans
-&kp GRAVE   &kp LEFT_BRACKET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACKET    &kp RBKT   &kp F1         &kp F2   &kp F3   &kp F4   &kp DEL
-&kp LSHIFT  &kp SEMI          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL            &kp BSLH   &kp F5         &kp F6   &kp F7   &kp F8   &kp PAGE_UP
-&kp LCTRL   &kp GRAVE         &kp N7        &kp N8        &kp N9        &kp BACKSLASH        &trans     &kp F9         &kp F10  &kp F11  &kp F12  &kp PAGE_DOWN
-                                            &kp PERIOD    &kp N0        &kp MINUS            &kp ENTER  &kp BACKSPACE
+&kp GRAVE   &kp LEFT_BRACKET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACKET    &kp INS    &kp F1         &kp F2   &kp F3   &kp F4   &kp DEL
+&kp LSHIFT  &kp SEMI          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp BACKSLASH        &kp PG_UP  &kp F5         &kp F6   &kp F7   &kp F8   &kp PAGE_UP
+&kp LCTRL   &kp GRAVE         &kp N7        &kp N8        &kp N9        &kp MINUS            &kp PG_DN  &kp F9         &kp F10  &kp F11  &kp F12  &kp PAGE_DOWN
+                                            &kp PERIOD    &kp N0        &kp EQUAL            &kp ENTER  &kp BACKSPACE
                                                           &none         &none                &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&kp F12         &kp F1                &kp F2            &kp F3            &kp F4            &kp F5                      &kp F6        &kp F7         &kp F8    &kp F9     &kp F10    &kp F11
-&kp LS(GRAVE)   &kp LS(LEFT_BRACKET)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(RIGHT_BRACKET)       &kp LS(RBKT)  &none          &trans    &none      &none      &trans
-&kp LEFT_SHIFT  &kp LS(SEMICOLON)     &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(EQUAL)               &kp LS(BSLH)  &kp LEFT       &kp UP    &kp DOWN   &kp RIGHT  &trans
-&kp LCTRL       &kp LS(GRAVE)         &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &kp LS(NON_US_BACKSLASH)    &none         &kp LEFT       &kp DOWN  &kp RIGHT  &none      &trans
-                                                        &kp LEFT_ALT      &kp LC(N0)        &kp LS(MINUS)               &trans        &kp BACKSPACE
-                                                                          &trans            &trans                      &none
+&none           &none                 &none             &none             &none             &none                    &none         &none          &none     &none      &none      &none
+&kp LS(GRAVE)   &kp LS(LEFT_BRACKET)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(RIGHT_BRACKET)    &kp LS(RBKT)  &none          &trans    &none      &none      &trans
+&kp LEFT_SHIFT  &kp LS(SEMICOLON)     &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(BACKSLASH)        &kp LS(BSLH)  &kp LEFT       &kp UP    &kp DOWN   &kp RIGHT  &trans
+&kp LCTRL       &kp LS(GRAVE)         &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &kp LS(MINUS)            &none         &kp LEFT       &kp DOWN  &kp RIGHT  &none      &trans
+                                                        &kp LEFT_ALT      &kp LC(N0)        &kp LS(EQUAL)            &trans        &kp BACKSPACE
+                                                                          &trans            &trans                   &none
             >;
         };
 
         Mouse {
             bindings = <
-&none        &none         &none         &none         &none      &none         &none       &none      &none         &none      &none   &none
-&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none      &bt BT_CLR    &trans      &kp LEFT   &kp UP_ARROW  &kp RIGHT  &trans  &kp DELETE
-&none        &trans        &trans        &mkp MCLK     &trans     &none         &kp DELETE  &mkp LCLK  &mkp MCLK     &mkp RCLK  &trans  &none
-&bootloader  &trans        &mkp RCLK     &kp LC(X)     &mkp LCLK  &kp LC(C)     &kp RC(C)   &mkp LCLK  &kp DOWN      &mkp RCLK  &trans  &bootloader
-                                         &kp LC(Z)     &mkp LCLK  &mkp RCLK     &kp LC(C)   &kp LC(V)
-                                                       &none      &trans        &trans
+&none   &none         &none         &none         &none         &none         &none      &none      &none         &none      &none      &none
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &kp LC(Y)  &kp LEFT   &kp UP_ARROW  &kp RIGHT  &trans     &kp DELETE
+&trans  &kp LC(A)     &kp LC(S)     &kp LC(D)     &kp LC(F)     &kp LC(G)     &kp LC(H)  &mkp LCLK  &mkp MCLK     &mkp RCLK  &trans     &none
+&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(B)     &kp RC(N)  &mkp MB4   &kp DOWN      &mkp MB5   &kp EQUAL  &kp GREATER_THAN
+                                    &trans        &trans        &trans        &kp LC(C)  &kp LC(V)
+                                                  &none         &trans        &trans
             >;
         };
     };

@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -127,8 +128,8 @@
             bindings = <
 &none   &none         &none         &none         &none         &none         &none      &none      &none         &none      &none      &none
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &kp LC(Y)  &kp LEFT   &kp UP_ARROW  &kp RIGHT  &trans     &kp DELETE
-&trans  &kp LC(A)     &kp LC(S)     &kp LC(D)     &kp LC(F)     &kp LC(G)     &kp LC(H)  &mkp LCLK  &mkp MCLK     &mkp RCLK  &trans     &trans
-&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(B)     &kp RC(N)  &mkp MB4   &kp DOWN      &mkp MB5   &kp EQUAL  &kp GREATER_THAN
+&trans  &kp LC(A)     &kp LC(S)     &kp LC(D)     &kp LC(F)     &kp LC(G)     &kp LEFT   &mkp LCLK  &mkp MCLK     &mkp RCLK  &trans     &trans
+&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(B)     &kp LC(Z)  &mkp MB4   &kp DOWN      &mkp MB5   &kp EQUAL  &kp GREATER_THAN
                                     &trans        &trans        &trans        &kp LC(C)  &kp LC(V)
                                                   &none         &trans        &trans
             >;

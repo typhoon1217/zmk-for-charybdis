@@ -94,7 +94,7 @@
 &kp ESC    &kp Q        &kp W           &kp E      &kp R      &kp T             &kp Y            &kp U          &kp I      &kp O        &kp P       &kp BACKSLASH
 &kp LSHFT  &mt LCTRL A  &mt LEFT_ALT S  &lt 2 D    &lt 1 F    &mt LEFT_ALT G    &mt H RIGHT_ALT  &lt 1 J        &lt 2 K    &mt LCTRL L  &lt 3 SEMI  &mt RIGHT_SHIFT SQT
 &kp LCTRL  &kp Z        &kp X           &kp C      &kp V      &kp B             &kp N            &kp M          &kp COMMA  &kp DOT      &kp SLASH   &kp LANG_HANGEUL
-                                        &lt 1 TAB  &kp SPACE  &kp LEFT_GUI      &lt 2 ENTER      &kp BACKSPACE
+                                        &lt 1 TAB  &kp SPACE  &kp LEFT_GUI      &kp BACKSPACE    &lt 2 ENTER
                                                    &trans     &trans            &trans
             >;
 

@@ -2,7 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -105,7 +105,7 @@
         numfn {
             bindings = <
 &trans      &trans                &trans        &trans        &trans        &trans                   &trans     &trans  &trans   &trans   &trans   &trans
-&kp GRAVE   &kp LEFT_BRACKET      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACKET        &kp GLOBE  &kp F1  &kp F2   &kp F3   &kp F4   &kp LEFT_ALT
+&kp GRAVE   &kp LEFT_BRACKET      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACKET        &kp HOME   &kp F1  &kp F2   &kp F3   &kp F4   &kp LEFT_ALT
 &kp LSHIFT  &kp LS(LEFT_BRACKET)  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LS(RIGHT_BRACKET)    &kp PG_UP  &kp F5  &kp F6   &kp F7   &kp F8   &kp RIGHT_SHIFT
 &kp LCTRL   &kp GRAVE             &kp N7        &kp N8        &kp N9        &kp MINUS                &kp PG_DN  &kp F9  &kp F10  &kp F11  &kp F12  &kp LCTRL
                                                 &kp PERIOD    &kp N0        &kp EQUAL                &trans     &trans

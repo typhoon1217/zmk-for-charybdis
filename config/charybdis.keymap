@@ -115,23 +115,23 @@
 
         layer_2 {
             bindings = <
-&none           &none                 &none             &none             &none             &none                    &none           &none           &none         &none      &none             &none
-&kp LS(GRAVE)   &kp LS(LEFT_BRACKET)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(RIGHT_BRACKET)    &kp LC(T)       &kp INS         &kp PG_UP     &kp HOME   &kp LG(LEFT_ALT)  &trans
-&kp LEFT_SHIFT  &kp LS(SEMICOLON)     &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(BACKSLASH)        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp RIGHT_WIN     &kp LG(LEFT_SHIFT)
-&kp LCTRL       &kp LS(GRAVE)         &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &kp LS(MINUS)            &kp LC(W)       &kp LC(DELETE)  &kp PG_DN     &kp END    &kp LG(LCTRL)     &trans
-                                                        &kp LEFT_ALT      &kp LS(N0)        &kp LS(EQUAL)            &kp LC(TAB)     &trans
+&none           &none                 &none             &none             &none             &none                    &none           &none            &none         &none      &none             &none
+&kp LS(GRAVE)   &kp LS(LEFT_BRACKET)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(RIGHT_BRACKET)    &kp LC(T)       &kp INS          &kp PG_UP     &kp HOME   &kp LG(LEFT_ALT)  &kp PRINTSCREEN
+&kp LEFT_SHIFT  &kp LS(SEMICOLON)     &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(BACKSLASH)        &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT  &kp RIGHT_WIN     &kp LG(LEFT_SHIFT)
+&kp LCTRL       &kp LS(GRAVE)         &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &kp LS(MINUS)            &kp LC(W)       &kp DELETE       &kp PG_DN     &kp END    &kp LG(LCTRL)     &kp LS(LC(TAB))
+                                                        &kp LEFT_ALT      &kp LS(N0)        &kp LS(EQUAL)            &kp LC(TAB)     &kp LS(LC(TAB))
                                                                           &trans            &trans                   &none
             >;
         };
 
         Mouse {
             bindings = <
-&none   &none         &none         &none         &none         &none         &none      &none      &none         &none      &none             &none
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &kp LC(Y)  &kp LEFT   &kp UP_ARROW  &kp RIGHT  &kp K_PLAY_PAUSE  &kp DELETE
-&trans  &kp LC(A)     &kp LC(S)     &kp LC(D)     &kp LC(F)     &kp LC(G)     &kp LEFT   &mkp LCLK  &mkp MCLK     &mkp RCLK  &trans            &kp C_PLAY_PAUSE
-&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(B)     &kp LC(Z)  &mkp MB4   &kp DOWN      &mkp MB5   &kp EQUAL         &kp GREATER_THAN
-                                    &trans        &trans        &trans        &kp LC(C)  &kp LC(V)
-                                                  &none         &trans        &trans
+&none   &none         &none         &none          &none         &none         &none      &none      &none         &none      &none             &none
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_CLR    &kp LC(Y)  &kp LEFT   &kp UP_ARROW  &kp RIGHT  &kp K_PLAY_PAUSE  &kp DELETE
+&trans  &kp END       &kp HOME      &kp PAGE_DOWN  &kp PG_UP     &kp LC(G)     &kp LEFT   &mkp LCLK  &mkp MCLK     &mkp RCLK  &trans            &kp C_PLAY_PAUSE
+&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)      &kp LC(V)     &kp LC(B)     &kp LC(Z)  &mkp MB4   &kp DOWN      &mkp MB5   &kp EQUAL         &kp GREATER_THAN
+                                    &trans         &trans        &trans        &kp LC(C)  &kp LC(V)
+                                                   &none         &trans        &trans
             >;
         };
     };

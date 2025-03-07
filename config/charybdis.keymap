@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -90,10 +91,10 @@
 
         Base {
             bindings = <
-&trans     &trans          &trans       &trans     &trans     &trans            &trans          &trans       &trans     &trans       &trans      &trans
-&kp TAB    &kp Q           &kp W        &kp E      &kp R      &kp T             &kp Y           &kp U        &kp I      &kp O        &kp P       &kp BACKSLASH
-&kp LSHFT  &mt LEFT_ALT A  &mt LCTRL S  &lt 2 D    &lt 1 F    &mt LEFT_ALT G    &mt LEFT_ALT H  &lt 1 J      &lt 2 K    &mt LCTRL L  &lt 3 SEMI  &mt RIGHT_SHIFT SQT
-&kp LCTRL  &kp Z           &kp X        &kp C      &kp V      &kp B             &kp N           &kp M        &kp COMMA  &kp DOT      &kp SLASH   &kp LANG_HANGEUL
+&trans     &trans          &trans       &trans     &trans     &trans            &trans          &trans       &trans     &trans       &trans       &trans
+&kp TAB    &kp Q           &kp W        &kp E      &kp R      &kp T             &kp Y           &kp U        &kp I      &kp O        &kp P        &kp BACKSLASH
+&kp LSHFT  &mt LEFT_ALT A  &mt LCTRL S  &lt 2 D    &lt 1 F    &mt LEFT_ALT G    &mt LEFT_ALT H  &lt 1 J      &lt 2 K    &mt LCTRL L  &lt 3 SEMI   &mt RIGHT_SHIFT SQT
+&kp LCTRL  &kp Z           &kp X        &kp C      &kp V      &kp B             &kp N           &kp M        &kp COMMA  &kp DOT      &lt 4 SLASH  &kp LANG_HANGEUL
                                         &lt 1 ESC  &kp SPACE  &kp LEFT_GUI      &kp BACKSPACE   &lt 2 ENTER
                                                    &trans     &trans            &trans
             >;
@@ -101,18 +102,18 @@
             trackball-bindings = <&tmv_coarse>;
         };
 
-        layer_1 {
+        numfn {
             bindings = <
-&trans      &trans                &trans        &trans        &trans        &trans                   &trans     &trans  &trans   &trans   &trans   &trans
-&kp GRAVE   &kp LEFT_BRACKET      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACKET        &kp INS    &kp F1  &kp F2   &kp F3   &kp F4   &kp LEFT_ALT
-&kp LSHIFT  &kp LS(LEFT_BRACKET)  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LS(RIGHT_BRACKET)    &kp PG_UP  &kp F5  &kp F6   &kp F7   &kp F8   &kp RIGHT_SHIFT
-&kp LCTRL   &kp GRAVE             &kp N7        &kp N8        &kp N9        &kp MINUS                &kp PG_DN  &kp F9  &kp F10  &kp F11  &kp F12  &kp LCTRL
-                                                &kp PERIOD    &kp N0        &kp EQUAL                &trans     &trans
+&trans      &trans                &trans        &trans        &trans        &trans                   &trans                                &trans  &trans   &trans   &trans   &trans
+&kp GRAVE   &kp LEFT_BRACKET      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACKET        &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp F1  &kp F2   &kp F3   &kp F4   &kp LEFT_ALT
+&kp LSHIFT  &kp LS(LEFT_BRACKET)  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LS(RIGHT_BRACKET)    &kp PG_UP                             &kp F5  &kp F6   &kp F7   &kp F8   &kp RIGHT_SHIFT
+&kp LCTRL   &kp GRAVE             &kp N7        &kp N8        &kp N9        &kp MINUS                &kp PG_DN                             &kp F9  &kp F10  &kp F11  &kp F12  &kp LCTRL
+                                                &kp PERIOD    &kp N0        &kp EQUAL                &trans                                &trans
                                                               &none         &none                    &trans
             >;
         };
 
-        layer_2 {
+        spenav {
             bindings = <
 &none           &none                 &none             &none             &none             &none                    &none           &none            &none         &none      &none             &none
 &kp LS(GRAVE)   &kp LS(LEFT_BRACKET)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(RIGHT_BRACKET)    &kp LC(T)       &kp INS          &kp PG_UP     &kp HOME   &kp LG(LEFT_ALT)  &kp PRINTSCREEN
@@ -123,7 +124,7 @@
             >;
         };
 
-        Mouse {
+        editMouse {
             bindings = <
 &none        &none      &none      &none          &none      &none        &none      &none      &none         &none      &none             &none
 &kp LC(TAB)  &kp LC(Q)  &kp LC(W)  &kp LC(E)      &kp LC(R)  &kp LC(T)    &kp LC(Y)  &kp LEFT   &kp UP_ARROW  &kp RIGHT  &kp K_PLAY_PAUSE  &kp DELETE
@@ -134,7 +135,7 @@
             >;
         };
 
-        layer_4 {
+        media {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans           &trans        &trans            &trans              &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3        &bt BT_SEL 3  &bt BT_SEL 4

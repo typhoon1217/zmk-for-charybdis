@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -90,11 +91,11 @@
 
         Base {
             bindings = <
-&trans     &trans       &trans          &trans     &trans     &trans            &trans          &trans       &trans     &trans       &trans      &trans
-&kp ESC    &kp Q        &kp W           &kp E      &kp R      &kp T             &kp Y           &kp U        &kp I      &kp O        &kp P       &kp BACKSLASH
-&kp LSHFT  &mt LCTRL A  &mt LEFT_ALT S  &lt 2 D    &lt 1 F    &mt LEFT_ALT G    &mt LEFT_ALT H  &lt 1 J      &lt 2 K    &mt LCTRL L  &lt 3 SEMI  &mt RIGHT_SHIFT SQT
-&kp LCTRL  &kp Z        &kp X           &kp C      &kp V      &kp B             &kp N           &kp M        &kp COMMA  &kp DOT      &kp SLASH   &kp LANG_HANGEUL
-                                        &lt 1 TAB  &kp SPACE  &kp LEFT_GUI      &kp BACKSPACE   &lt 2 ENTER
+&trans     &trans          &trans       &trans     &trans     &trans            &trans          &trans       &trans     &trans       &trans      &trans
+&kp TAB    &kp Q           &kp W        &kp E      &kp R      &kp T             &kp Y           &kp U        &kp I      &kp O        &kp P       &kp BACKSLASH
+&kp LSHFT  &mt LEFT_ALT A  &mt LCTRL S  &lt 2 D    &lt 1 F    &mt LEFT_ALT G    &mt LEFT_ALT H  &lt 1 J      &lt 2 K    &mt LCTRL L  &lt 3 SEMI  &mt RIGHT_SHIFT SQT
+&kp LCTRL  &kp Z           &kp X        &kp C      &kp V      &kp B             &kp N           &kp M        &kp COMMA  &kp DOT      &kp SLASH   &kp LANG_HANGEUL
+                                        &lt 1 ESC  &kp SPACE  &kp LEFT_GUI      &kp BACKSPACE   &lt 2 ENTER
                                                    &trans     &trans            &trans
             >;
 
@@ -103,22 +104,22 @@
 
         layer_1 {
             bindings = <
-&trans      &trans            &trans        &trans        &trans        &trans               &trans     &trans         &trans   &trans   &trans   &trans
-&kp GRAVE   &kp LEFT_BRACKET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACKET    &kp INS    &kp F1         &kp F2   &kp F3   &kp F4   &kp DEL
-&kp LSHIFT  &kp SEMI          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp BACKSLASH        &kp PG_UP  &kp F5         &kp F6   &kp F7   &kp F8   &kp PAGE_UP
-&kp LCTRL   &kp GRAVE         &kp N7        &kp N8        &kp N9        &kp MINUS            &kp PG_DN  &kp F9         &kp F10  &kp F11  &kp F12  &kp PAGE_DOWN
-                                            &kp PERIOD    &kp N0        &kp EQUAL            &kp ENTER  &kp BACKSPACE
-                                                          &none         &none                &trans
+&trans      &trans                &trans        &trans        &trans        &trans                   &trans     &trans  &trans   &trans   &trans   &trans
+&kp GRAVE   &kp LEFT_BRACKET      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACKET        &kp INS    &kp F1  &kp F2   &kp F3   &kp F4   &kp LEFT_ALT
+&kp LSHIFT  &kp LS(LEFT_BRACKET)  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LS(RIGHT_BRACKET)    &kp PG_UP  &kp F5  &kp F6   &kp F7   &kp F8   &kp RIGHT_SHIFT
+&kp LCTRL   &kp GRAVE             &kp N7        &kp N8        &kp N9        &kp MINUS                &kp PG_DN  &kp F9  &kp F10  &kp F11  &kp F12  &kp LCTRL
+                                                &kp PERIOD    &kp N0        &kp EQUAL                &trans     &trans
+                                                              &none         &none                    &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&none           &none                 &none             &none             &none             &none                    &none                   &none             &none                 &none              &none          &none
-&kp LS(GRAVE)   &kp LS(LEFT_BRACKET)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(RIGHT_BRACKET)    &kp LG(LEFT_ARROW)      &kp LG(DOWN)      &kp LG(UP_ARROW)      &kp LG(RIGHT)      &kp LS(LCTRL)  &trans
-&kp LEFT_SHIFT  &kp LS(SEMICOLON)     &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(BACKSLASH)        &kp LEFT_ARROW          &kp DOWN_ARROW    &kp UP_ARROW          &kp RIGHT          &kp RIGHT_WIN  &trans
-&kp LCTRL       &kp LS(GRAVE)         &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &kp LS(MINUS)            &kp LG(LC(LEFT_ARROW))  &kp LG(LC(DOWN))  &kp LG(LC(UP_ARROW))  &kp LG(LC(RIGHT))  &kp LG(M)      &trans
-                                                        &kp LEFT_ALT      &kp LS(N0)        &kp LS(EQUAL)            &trans                  &trans
+&none           &none                 &none             &none             &none             &none                    &none           &none           &none         &none      &none             &none
+&kp LS(GRAVE)   &kp LS(LEFT_BRACKET)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(RIGHT_BRACKET)    &kp LC(T)       &kp INS         &kp PG_UP     &kp HOME   &kp LG(LEFT_ALT)  &trans
+&kp LEFT_SHIFT  &kp LS(SEMICOLON)     &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(BACKSLASH)        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp RIGHT_WIN     &kp LG(LEFT_SHIFT)
+&kp LCTRL       &kp LS(GRAVE)         &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &kp LS(MINUS)            &kp LC(W)       &kp LC(DELETE)  &kp PG_DN     &kp END    &kp LG(LCTRL)     &trans
+                                                        &kp LEFT_ALT      &kp LS(N0)        &kp LS(EQUAL)            &kp LC(TAB)     &trans
                                                                           &trans            &trans                   &none
             >;
         };

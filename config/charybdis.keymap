@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -114,12 +115,12 @@
 
         spenav {
             bindings = <
-&none           &none                              &none                       &none                    &none             &none                               &none           &none            &none         &none      &none             &none
-&kp LS(GRAVE)   &kp LS(COMMA)                      &kp LS(NUMBER_1)            &kp LS(NUMBER_2)         &kp LS(NUMBER_3)  &kp LS(PERIOD)                      &kp LC(T)       &kp INS          &kp PG_UP     &kp HOME   &kp LG(LEFT_ALT)  &kp PRINTSCREEN
-&kp LEFT_SHIFT  &mt LS(LEFT_ALT) LS(LEFT_BRACKET)  &mt LS(LCTRL) LS(NUMBER_4)  &kp LS(N5)               &kp LS(NUMBER_6)  &mt LEFT_SHIFT LS(RIGHT_BRACKET)    &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT  &kp RIGHT_WIN     &mt LCTRL LC(LS(TAB))
-&kp LCTRL       &kp LS(GRAVE)                      &kp LS(N7)                  &kp LS(N8)               &kp LS(N9)        &kp LS(MINUS)                       &kp LC(W)       &kp DELETE       &kp PG_DN     &kp END    &kp LG(LCTRL)     &kp LG(LEFT_SHIFT)
-                                                                               &mt LEFT_ALT LS(PERIOD)  &kp LS(N0)        &mt LEFT_GUI LS(EQUAL)              &kp LC(TAB)     &kp LS(LC(TAB))
-                                                                                                        &trans            &trans                              &none
+&none           &none                    &none             &none                      &none             &none                         &none           &none            &none         &none      &none             &none
+&kp LS(GRAVE)   &kp LESS_THAN            &kp LS(NUMBER_1)  &kp LS(NUMBER_2)           &kp LS(NUMBER_3)  &kp GREATER_THAN              &kp LC(T)       &kp INS          &kp PG_UP     &kp HOME   &kp LG(LEFT_ALT)  &kp PRINTSCREEN
+&kp LEFT_SHIFT  &mt LEFT_ALT LEFT_BRACE  &mt LCTRL DOLLAR  &kp LS(N5)                 &kp LS(NUMBER_6)  &mt LEFT_SHIFT RIGHT_BRACE    &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT  &kp RIGHT_WIN     &mt LCTRL LC(LS(TAB))
+&kp LCTRL       &kp LS(GRAVE)            &kp LS(N7)        &kp LS(N8)                 &kp LS(N9)        &kp LS(MINUS)                 &kp LC(W)       &kp DELETE       &kp PG_DN     &kp END    &kp LG(LCTRL)     &kp LG(LEFT_SHIFT)
+                                                           &mt LEFT_ALT GREATER_THAN  &kp LS(N0)        &mt LEFT_GUI PLUS             &kp LC(TAB)     &kp LS(LC(TAB))
+                                                                                      &trans            &trans                        &none
             >;
         };
 

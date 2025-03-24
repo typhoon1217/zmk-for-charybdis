@@ -59,6 +59,16 @@
             bindings = <&kp MINUS>;
             key-positions = <44 45>;
         };
+
+        lbk {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <16 15>;
+        };
+
+        rbk {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <17 16>;
+        };
     };
 
     keymap {
@@ -90,11 +100,11 @@
 
         spenav {
             bindings = <
-&none           &none                    &none             &none                      &none             &none                         &none           &none            &none         &none      &none             &none
-&kp LS(GRAVE)   &kp LESS_THAN            &kp LS(NUMBER_1)  &kp LS(NUMBER_2)           &kp LS(NUMBER_3)  &kp GREATER_THAN              &kp LC(T)       &kp INS          &kp PG_UP     &kp HOME   &kp LG(LEFT_ALT)  &kp PRINTSCREEN
-&kp LEFT_SHIFT  &mt LEFT_ALT LEFT_BRACE  &mt LCTRL DOLLAR  &kp LS(N5)                 &kp LS(NUMBER_6)  &mt LEFT_SHIFT RIGHT_BRACE    &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT  &kp RIGHT_WIN     &mt LCTRL LC(LS(TAB))
-&kp LCTRL       &kp LS(GRAVE)            &kp LS(N7)        &kp LS(N8)                 &kp LS(N9)        &kp LS(MINUS)                 &kp LC(W)       &kp DELETE       &kp PG_DN     &kp END    &kp LG(LCTRL)     &kp LG(LEFT_SHIFT)
-                                                           &mt LEFT_ALT GREATER_THAN  &kp LS(N0)        &mt LEFT_GUI PLUS             &kp LC(TAB)     &kp LS(LC(TAB))
+&none           &none                    &none             &none                      &none             &none                         &none           &none           &none         &none      &none             &none
+&kp TILDE       &kp LESS_THAN            &kp LS(NUMBER_1)  &kp LS(NUMBER_2)           &kp LS(NUMBER_3)  &kp GREATER_THAN              &kp LC(T)       &kp INS         &kp PG_UP     &kp HOME   &kp LG(LEFT_ALT)  &kp PRINTSCREEN
+&kp LEFT_SHIFT  &mt LEFT_ALT LEFT_BRACE  &mt LCTRL DOLLAR  &kp LS(N5)                 &kp LS(NUMBER_6)  &mt LEFT_SHIFT RIGHT_BRACE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp LEFT_GUI      &mt LCTRL LS(LEFT_WIN)
+&kp TAB         &kp LS(GRAVE)            &kp LS(N7)        &kp LS(N8)                 &kp LS(N9)        &kp LS(MINUS)                 &kp LC(W)       &kp DELETE      &kp PG_DN     &kp END    &kp LG(LCTRL)     &kp LG(LEFT_SHIFT)
+                                                           &mt LEFT_ALT GREATER_THAN  &kp LS(N0)        &mt LEFT_GUI PLUS             &kp LC(C)       &kp LC(V)
                                                                                       &trans            &trans                        &none
             >;
         };
@@ -102,9 +112,9 @@
         editMouse {
             bindings = <
 &none        &none      &none      &none          &none      &none        &none      &none      &none         &none      &none             &none
-&kp LC(TAB)  &kp LC(Q)  &kp LC(W)  &kp LC(E)      &kp LC(R)  &kp LC(T)    &kp LC(Y)  &kp LEFT   &kp UP_ARROW  &kp RIGHT  &kp K_PLAY_PAUSE  &kp DELETE
+&trans       &kp LC(Q)  &kp LC(W)  &kp LC(E)      &kp LC(R)  &kp LC(T)    &kp LC(Y)  &kp LEFT   &kp UP_ARROW  &kp RIGHT  &kp K_PLAY_PAUSE  &kp DELETE
 &trans       &kp END    &kp HOME   &kp PAGE_DOWN  &kp PG_UP  &kp LC(G)    &kp LEFT   &mkp LCLK  &mkp MCLK     &mkp RCLK  &trans            &kp C_PLAY_PAUSE
-&trans       &kp LC(Z)  &kp LC(X)  &kp LC(C)      &kp LC(V)  &kp LC(B)    &kp LC(Z)  &mkp MB4   &kp DOWN      &mkp MB5   &kp EQUAL         &kp GREATER_THAN
+&kp LC(TAB)  &kp LC(Z)  &kp LC(X)  &kp LC(C)      &kp LC(V)  &kp LC(B)    &kp LC(Z)  &mkp MB4   &kp DOWN      &mkp MB5   &kp EQUAL         &kp GREATER_THAN
                                    &trans         &trans     &trans       &kp LC(C)  &kp LC(V)
                                                   &none      &trans       &trans
             >;

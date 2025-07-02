@@ -90,7 +90,7 @@
         numfn {
             bindings = <
 &trans      &trans                     &trans              &trans        &trans        &trans                          &trans     &trans  &trans   &trans        &trans           &trans
-&kp GRAVE   &kp COMMA                  &kp NUMBER_1        &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD                      &kp HOME   &kp F1  &kp F2   &kp F3        &kp F4           &kp LEFT_ALT
+&kp GRAVE   &kp LEFT_PARENTHESIS       &kp NUMBER_1        &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_PARENTHESIS           &kp HOME   &kp F1  &kp F2   &kp F3        &kp F4           &kp LEFT_ALT
 &kp LSHIFT  &mt LEFT_ALT LEFT_BRACKET  &mt LCTRL NUMBER_4  &kp N5        &kp NUMBER_6  &mt LEFT_SHIFT RIGHT_BRACKET    &kp PG_UP  &kp F5  &kp F6   &mt LCTRL F7  &mt LEFT_ALT F8  &kp RIGHT_SHIFT
 &kp TAB     &kp GRAVE                  &kp N7              &kp N8        &kp N9        &kp MINUS                       &kp PG_DN  &kp F9  &kp F10  &kp F11       &kp F12          &kp LCTRL
                                                            &kp PERIOD    &kp N0        &mt LEFT_GUI EQUAL              &trans     &trans
@@ -100,12 +100,12 @@
 
         spenav {
             bindings = <
-&none           &none                    &none             &none                      &none             &none                         &none           &none           &none         &none      &none             &none
-&kp TILDE       &kp LESS_THAN            &kp LS(NUMBER_1)  &kp LS(NUMBER_2)           &kp LS(NUMBER_3)  &kp GREATER_THAN              &kp LC(T)       &kp INS         &kp PG_UP     &kp HOME   &kp LG(LEFT_ALT)  &kp PRINTSCREEN
-&kp LEFT_SHIFT  &mt LEFT_ALT LEFT_BRACE  &mt LCTRL DOLLAR  &kp LS(N5)                 &kp LS(NUMBER_6)  &mt LEFT_SHIFT RIGHT_BRACE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp LEFT_GUI      &mt LCTRL LS(LEFT_WIN)
-&kp TAB         &kp LS(GRAVE)            &kp LS(N7)        &kp LS(N8)                 &kp LS(N9)        &kp LS(MINUS)                 &kp LC(W)       &kp DELETE      &kp PG_DN     &kp END    &kp LG(LCTRL)     &kp LG(LEFT_SHIFT)
-                                                           &mt LEFT_ALT GREATER_THAN  &kp LS(N0)        &mt LEFT_GUI PLUS             &kp LC(C)       &kp LC(V)
-                                                                                      &trans            &trans                        &none
+&none           &none                          &none                   &none                      &none             &none                               &none           &none           &none         &none      &none             &none
+&kp TILDE       &kp LESS_THAN                  &kp LS(NUMBER_1)        &kp LS(NUMBER_2)           &kp LS(NUMBER_3)  &kp GREATER_THAN                    &kp LC(T)       &kp INS         &kp PG_UP     &kp HOME   &kp LG(LEFT_ALT)  &kp PRINTSCREEN
+&kp LEFT_SHIFT  &mt LEFT_ALT LS(LEFT_BRACKET)  &mt LCTRL RS(NUMBER_4)  &kp LS(N5)                 &kp LS(NUMBER_6)  &mt LEFT_SHIFT RS(RIGHT_BRACKET)    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp LEFT_GUI      &mt LCTRL LS(LEFT_WIN)
+&kp TAB         &kp LS(GRAVE)                  &kp LS(N7)              &kp LS(N8)                 &kp LS(N9)        &kp LS(MINUS)                       &kp LC(W)       &kp DELETE      &kp PG_DN     &kp END    &kp LG(LCTRL)     &kp LG(LEFT_SHIFT)
+                                                                       &mt LEFT_ALT GREATER_THAN  &kp LS(N0)        &mt LEFT_GUI PLUS                   &kp LC(C)       &kp LC(V)
+                                                                                                  &trans            &trans                              &none
             >;
         };
 

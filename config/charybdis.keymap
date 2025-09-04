@@ -133,7 +133,7 @@
                                                               &none          &trans                   &trans
             >;
 
-            trackball-bindings = <&tmv_precise>;
+            trackball-bindings = <&tmv_fine>;
         };
 
         media {

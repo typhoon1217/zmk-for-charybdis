@@ -3,6 +3,31 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+// Configure precise trackball movement
+&tmv_fine {
+    time-to-max-speed-ms = <2000>;    // Slower acceleration (more precise)
+    acceleration-exponent = <1>;       // Linear acceleration (more predictable)
+    delay-ms = <0>;                   // No delay for responsiveness
+};
+
+// Keep coarse movement settings for other layers
+&tmv_coarse {
+    time-to-max-speed-ms = <300>;     // Faster acceleration (less precise)
+    acceleration-exponent = <2>;       // Exponential acceleration
+    delay-ms = <0>;
+};
+
+// Add mouse key behavior configuration
+&mkp {
+    time-to-max-speed-ms = <0>;    // Disable acceleration
+    acceleration-exponent = <0>;    // No movement acceleration
+};
+
+&mmv {
+    time-to-max-speed-ms = <1000>;  // Keep normal movement for trackball
+    acceleration-exponent = <1>;
+};
+
 &lt {
     tapping-term-ms = <200>;
     flavor = "balanced";
@@ -117,6 +142,7 @@
                                              &kp LS(LC(C))    &kp LC(LS(V))  &trans                   &kp LC(C)             &kp LC(V)
                                                               &none          &trans                   &trans
             >;
+            trackball-bindings = <&tmv_fine>; 
         };
 
         media {

@@ -10,17 +10,6 @@
 };
 
 / {
-    behaviors {
-        // Create a precise trackball movement behavior for layer 3
-        tmv_precise: tmv_precise {
-            compatible = "zmk,behavior-mouse-move";
-            label = "TMV_PRECISE";
-            #binding-cells = <1>;
-            time-to-max-speed-ms = <2000>;
-            acceleration-exponent = <1>;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -133,7 +122,7 @@
                                                               &none          &trans                   &trans
             >;
 
-            trackball-bindings = <&tmv_fine>;
+            trackball-bindings = <&tmv_coarse>;
         };
 
         media {

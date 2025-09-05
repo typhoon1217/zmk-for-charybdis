@@ -10,26 +10,6 @@
 };
 
 / {
-    behaviors {
-        tmv_coarse: tmv_coarse {
-            compatible = "zmk,behavior-trackball-scroll";
-            label = "TRACKBALL_MOVEMENT_COARSE";
-            #trackball-binding-cells = <0>;
-            delay-ms = <0>;
-            time-to-max-speed-ms = <300>;
-            acceleration-exponent = <1>;
-        };
-
-        tmv_fine: tmv_fine {
-            compatible = "zmk,behavior-trackball-scroll";
-            label = "TRACKBALL_MOVEMENT_FINE";
-            #trackball-binding-cells = <0>;
-            delay-ms = <0>;
-            time-to-max-speed-ms = <600>;
-            acceleration-exponent = <0>;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 

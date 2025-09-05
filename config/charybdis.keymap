@@ -11,21 +11,7 @@
 
 / {
     behaviors {
-        // Trackball movement behaviors
-        tmv_coarse: trackball_move_coarse {
-            compatible = "zmk,behavior-trackball-move";
-            label = "TRACKBALL_COARSE";
-            #binding-cells = <0>;
-            scale = <300>;  // Slow/precise movement for clicks
-        };
-
-        tmv_fine: trackball_move_fine {
-            compatible = "zmk,behavior-trackball-move";
-            label = "TRACKBALL_FINE";
-            #binding-cells = <0>;
-            scale = <200>;  // Even finer movement
-        };
-
+        // Fast trackball movement for dragging
         tmv_fast: trackball_move_fast {
             compatible = "zmk,behavior-trackball-move";
             label = "TRACKBALL_FAST";
@@ -68,6 +54,15 @@
             bindings = <&mkp>;
             release-after-ms = <5000>;
         };
+    };
+
+    // Override existing trackball movement behaviors with different speeds
+    &tmv_coarse {
+        scale = <300>;  // Slow/precise movement for clicks
+    };
+
+    &tmv_fine {
+        scale = <200>;  // Even finer movement
     };
 
     combos {

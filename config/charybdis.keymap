@@ -46,6 +46,37 @@
             tapping-term-ms = <200>;
             bindings = <&mkp RCLK>, <&mkp RCLK>;
         };
+
+        // Hold-tap for dragging - hold activates drag layer with normal speed
+        mkp_drag_l: mouse_left_drag {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOUSE_LEFT_DRAG";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "hold-preferred";
+            bindings = <&mo>, <&mkp>;
+        };
+
+        mkp_drag_m: mouse_middle_drag {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOUSE_MIDDLE_DRAG";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "hold-preferred";
+            bindings = <&mo>, <&mkp>;
+        };
+
+        mkp_drag_r: mouse_right_drag {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOUSE_RIGHT_DRAG";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "hold-preferred";
+            bindings = <&mo>, <&mkp>;
+        };
     };
 
     combos {
@@ -152,10 +183,10 @@
 
         editMouse {
             bindings = <
-&none        &none      &none                &none            &none          &none                    &none                 &none             &none             &none              &none             &none
-&trans       &kp LC(Q)  &kp LC(W)            &kp LC(E)        &kp LC(R)      &kp LC(T)                &kp LC(Y)             &mwh SCROLL_LEFT  &mwh SCROLL_UP    &mwh SCROLL_RIGHT  &kp K_PLAY_PAUSE  &kp DELETE
-&trans       &kp HOME   &kp LC(PRINTSCREEN)  &kp DELETE       &kp END        &mt LEFT_SHIFT DELETE    &mt LEFT_SHIFT LG(V)  &td_lclk          &td_mclk          &td_rclk           &trans            &kp C_PLAY_PAUSE
-&kp LC(TAB)  &kp LC(Z)  &kp LC(X)            &kp PRINTSCREEN  &kp LC(V)      &kp LC(B)                &kp LC(Z)             &mkp MB4          &mwh SCROLL_DOWN  &mkp MB5           &kp EQUAL         &kp GREATER_THAN
+&none        &none      &none                &none            &none          &none                    &none                 &none                 &none                 &none                  &none             &none
+&trans       &kp LC(Q)  &kp LC(W)            &kp LC(E)        &kp LC(R)      &kp LC(T)                &kp LC(Y)             &mwh SCROLL_LEFT      &mwh SCROLL_UP        &mwh SCROLL_RIGHT      &kp K_PLAY_PAUSE  &kp DELETE
+&trans       &kp HOME   &kp LC(PRINTSCREEN)  &kp DELETE       &kp END        &mt LEFT_SHIFT DELETE    &mt LEFT_SHIFT LG(V)  &mkp_drag_l 5 LCLK    &mkp_drag_m 5 MCLK    &mkp_drag_r 5 RCLK     &trans            &kp C_PLAY_PAUSE
+&kp LC(TAB)  &kp LC(Z)  &kp LC(X)            &kp PRINTSCREEN  &kp LC(V)      &kp LC(B)                &kp LC(Z)             &mkp MB4              &mwh SCROLL_DOWN      &mkp MB5               &kp EQUAL         &kp GREATER_THAN
                                              &kp LS(LC(C))    &kp LC(LS(V))  &trans                   &kp LC(C)             &kp LC(V)
                                                               &none          &trans                   &trans
             >;
@@ -174,6 +205,19 @@
             >;
 
             trackball-bindings = <&tmv_fine>;
+        };
+
+        dragSpeed {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
+                                &trans  &trans    &trans
+            >;
+
+            trackball-bindings = <&tmv_coarse>;
         };
     };
 };

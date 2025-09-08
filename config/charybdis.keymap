@@ -64,11 +64,11 @@
     // Override existing trackball movement behaviors with different speeds
 
     &tmv_coarse {
-        scale = <300>;  // Slow/precise movement for clicks
+        scale = <200>;  // Default slow/precise movement
     };
 
     &tmv_fine {
-        scale = <200>;  // Even finer movement
+        scale = <400>;  // Faster movement for layer 3
     };
 
     combos {

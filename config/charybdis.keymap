@@ -110,7 +110,7 @@
                                                    &trans     &trans              &trans
             >;
 
-            trackball-bindings = <&tmv_fine>;
+            trackball-bindings = <&tmv_coarse>;
         };
 
         numfn {
@@ -149,7 +149,7 @@
                                                               &none          &trans                   &trans
             >;
 
-            trackball-bindings = <&tmv_coarse>;
+            trackball-bindings = <&tmv_fine>;
         };
 
         media {

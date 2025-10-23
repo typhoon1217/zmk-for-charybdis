@@ -83,7 +83,7 @@
                                                    &trans     &trans              &trans
             >;
 
-            trackball-bindings = <&tmv_coarse>;
+            trackball-bindings = <&tmv_fine>;
         };
 
         numfn {
@@ -96,7 +96,7 @@
                                                                          &none         &none                           &trans
             >;
 
-            trackball-bindings = <&tmv_fine>;
+            trackball-bindings = <&tmv_coarse>;
         };
 
         spenav {
@@ -109,7 +109,7 @@
                                                                                                   &trans            &trans                              &none
             >;
 
-            trackball-bindings = <&tmv_fine>;
+            trackball-bindings = <&tmv_coarse>;
         };
 
         editMouse {
@@ -122,7 +122,7 @@
                                                               &none          &trans                   &trans
             >;
 
-            trackball-bindings = <&tmv_fine>;
+            trackball-bindings = <&tmv_coarse>;
         };
 
         media {

@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -75,11 +76,11 @@
 
         Base {
             bindings = <
-&trans     &trans          &trans       &trans     &trans     &trans              &trans            &trans              &trans     &trans       &trans       &trans
-&kp GRAVE  &kp Q           &kp W        &kp E      &kp R      &kp T               &kp Y             &kp U               &kp I      &kp O        &kp P        &kp BACKSLASH
-&kp LSHFT  &mt LEFT_ALT A  &mt LCTRL S  &lt 2 D    &lt 1 F    &mt LEFT_SHIFT G    &mt LEFT_SHIFT H  &lt 1 J             &lt 2 K    &mt LCTRL L  &lt 3 SEMI   &mt RIGHT_SHIFT SQT
-&kp TAB    &kp Z           &kp X        &kp C      &kp V      &kp B               &kp N             &kp M               &kp COMMA  &kp DOT      &lt 4 SLASH  &kp LANG_HANGEUL
-                                        &lt 3 ESC  &kp SPACE  &kp LEFT_GUI        &kp BACKSPACE     &mt LEFT_ALT ENTER
+&trans     &trans          &trans       &trans     &trans     &trans              &trans            &trans       &trans     &trans       &trans       &trans
+&kp GRAVE  &kp Q           &kp W        &kp E      &kp R      &kp T               &kp Y             &kp U        &kp I      &kp O        &kp P        &kp BACKSLASH
+&kp LSHFT  &mt LEFT_ALT A  &mt LCTRL S  &lt 2 D    &lt 1 F    &mt LEFT_SHIFT G    &mt LEFT_SHIFT H  &lt 1 J      &lt 2 K    &mt LCTRL L  &lt 3 SEMI   &mt RIGHT_SHIFT SQT
+&kp TAB    &kp Z           &kp X        &kp C      &kp V      &kp B               &kp N             &kp M        &kp COMMA  &kp DOT      &lt 4 SLASH  &kp LANG_HANGEUL
+                                        &lt 1 ESC  &kp SPACE  &kp LEFT_GUI        &kp BACKSPACE     &lt 2 ENTER
                                                    &trans     &trans              &trans
             >;
 
